@@ -1,59 +1,44 @@
-name: Build Android APK & AAB
+name: Build Android APK and AAB
 
 on:
   push:
-    branches: [ main ]
-  workflow_dispatch:
+    branches:
+      - main  # O la rama principal que utilices (ej. master)
+  workflow_dispatch: # Permite ejecutar la compilación manualmente desde GitHub
 
 jobs:
   build:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v4
+      - name: Checkout del código
+        uses: actions/checkout@v4
 
-    - name: Set up JDK 17
-      uses: actions/setup-java@v4
-      with:
-        java-version: '17'
-        distribution: 'temurin'
+      - name: Configurar Java (JDK 17)
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
 
-    - name: Set up Node.js
-      uses: actions/setup-node@v4
-      with:
-        node-version: '20'
+      - name: Dar permisos de ejecución a Gradle
+        run: chmod +x gradlew
 
-    - name: Build Cordova APK and AAB
-      run: |
-        npm install -g cordova
-        
-        # Crear la app
-        cordova create app com.gnsapps.micarrera "MiCarreraFutbolistica"
-        cd app
-        
-        # Cambiar versión en config.xml
-        sed -i 's/version="1.0.0"/version="0.1.0"/g' config.xml
-        
-        # Copiar index.html
-        rm -rf www/*
-        cp ../index.html www/index.html
-        
-        # Copiar icono si existe
-        if [ -f ../icon.png ]; then
-          cp ../icon.png www/icon.png
-          sed -i '/<\/widget>/i \    <icon src="www/icon.png" \/>' config.xml
-        fi
+      - name: Compilar APK de depuración
+        run: ./gradlew assembleDebug
 
-        # Añadir plataforma Android y compilar APK y AAB
-        cordova platform add android
-        cordova build android --release --packageType=apk
-        cordova build android --release --packageType=bundle
+      - name: Compilar AAB (App Bundle)
+        run: ./gradlew bundleDebug
 
-    - name: Upload Build Artifacts
-      uses: actions/upload-artifact@v4
-      with:
-        name: app-release-files
-        path: |
+      - name: Subir APK generado como artefacto
+        uses: actions/upload-artifact@v4
+        with:
+          name: app-debug-apk
+          path: app/build/outputs/apk/debug/app-debug.apk
+
+      - name: Subir AAB generado como artefacto
+        uses: actions/upload-artifact@v4
+        with:
+          name: app-debug-aab
+          path: app/build/outputs/bundle/debug/app-release.aab
           app/platforms/android/app/build/outputs/apk/release/*.apk
           app/platforms/android/app/build/outputs/bundle/release/*.aab
