@@ -1,0 +1,39 @@
+name: Build Android APK
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Set up JDK 17
+      uses: actions/setup-java@v3
+      with:
+        java-version: '17'
+        distribution: 'temurin'
+
+    - name: Setup Android SDK
+      uses: android-actions/setup-android@v2
+
+    - name: Create Webview Project & Build
+      run: |
+        npm install -g cordova
+        cordova create app com.gnsapps.micarrera "Mi Carrera Futbolistica"
+        cd app
+        rm -rf www/*
+        cp ../index.html www/
+        cordova platform add android
+        cordova build android --release
+
+    - name: Upload APK
+      uses: actions/upload-artifact@v3
+      with:
+        name: app-release-apk
+        path: app/platforms/android/app/build/outputs/apk/release/
