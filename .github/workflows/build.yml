@@ -30,10 +30,21 @@ jobs:
     - name: Build Cordova APK
       run: |
         npm install -g cordova
-        cordova create app com.gnsapps.micarrera "Mi Carrera Futbolistica"
+        
+        # Crear la app especificando el ID, Nombre y la versión 0.1.0
+        cordova create app com.gnsapps.micarrera "Mi Carrera Futbolistica" --version=0.1.0
         cd app
+        
+        # Copiar tu index.html
         rm -rf www/*
         cp ../index.html www/
+        
+        # Copiar logo e indicárselo a Cordova en config.xml
+        if [ -f ../icon.png ]; then
+          cp ../icon.png www/icon.png
+          sed -i '/<\/widget>/i \    <icon src="www/icon.png" \/>' config.xml
+        fi
+
         cordova platform add android
         cordova build android --release
 
