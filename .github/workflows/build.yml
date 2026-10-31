@@ -1,4 +1,4 @@
-name: Build Android APK
+name: Build Android APK & AAB
 
 on:
   push:
@@ -24,35 +24,36 @@ jobs:
       with:
         node-version: '20'
 
-    - name: Build Cordova APK
+    - name: Build Cordova APK and AAB
       run: |
         npm install -g cordova
         
-        # Crear proyecto Cordova
+        # Crear la app
         cordova create app com.gnsapps.micarrera "MiCarreraFutbolistica"
-        
-        # Entrar en la carpeta generada
         cd app
         
-        # Reemplazar versión en config.xml
+        # Cambiar versión en config.xml
         sed -i 's/version="1.0.0"/version="0.1.0"/g' config.xml
         
-        # Limpiar y copiar el HTML principal
+        # Copiar index.html
         rm -rf www/*
         cp ../index.html www/index.html
         
-        # Configurar icono si existe
+        # Copiar icono si existe
         if [ -f ../icon.png ]; then
           cp ../icon.png www/icon.png
           sed -i '/<\/widget>/i \    <icon src="www/icon.png" \/>' config.xml
         fi
 
-        # Agregar plataforma y compilar
+        # Añadir plataforma Android y compilar APK y AAB
         cordova platform add android
-        cordova build android --release
+        cordova build android --release --packageType=apk
+        cordova build android --release --packageType=bundle
 
-    - name: Upload APK Artifact
+    - name: Upload Build Artifacts
       uses: actions/upload-artifact@v4
       with:
-        name: app-release-apk
-        path: app/platforms/android/app/build/outputs/apk/release/*.apk
+        name: app-release-files
+        path: |
+          app/platforms/android/app/build/outputs/apk/release/*.apk
+          app/platforms/android/app/build/outputs/bundle/release/*.aab
