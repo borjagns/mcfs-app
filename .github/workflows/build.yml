@@ -25,12 +25,19 @@ jobs:
           distribution: 'temurin'
           java-version: '17'
 
+      - name: Preparar carpeta web para Capacitor
+        run: |
+          mkdir -p www
+          cp -r index.html www/ 2>/dev/null || true
+          cp -r *.html *.js *.css *.png *.jpg www/ 2>/dev/null || true
+
       - name: Inicializar proyecto Capacitor y Android
         run: |
           npm init -y
           npm install @capacitor/core @capacitor/cli @capacitor/android
-          npx cap init "MiJuego" "com.mijuego.app" --web-dir .
+          npx cap init "MiJuego" "com.mijuego.app" --web-dir www
           npx cap add android
+          npx cap copy android
           npx cap sync android
 
       - name: Dar permisos a Gradle
