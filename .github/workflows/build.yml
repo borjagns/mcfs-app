@@ -28,17 +28,26 @@ jobs:
       run: |
         npm install -g cordova
         
-        cordova create app com.gnsapps.micarrera "Mi Carrera Futbolistica" --version=0.1.0
+        # Crear proyecto Cordova
+        cordova create app com.gnsapps.micarrera "MiCarreraFutbolistica"
+        
+        # Entrar en la carpeta generada
         cd app
         
-        rm -rf www/*
-        cp ../index.html www/
+        # Reemplazar versión en config.xml
+        sed -i 's/version="1.0.0"/version="0.1.0"/g' config.xml
         
+        # Limpiar y copiar el HTML principal
+        rm -rf www/*
+        cp ../index.html www/index.html
+        
+        # Configurar icono si existe
         if [ -f ../icon.png ]; then
           cp ../icon.png www/icon.png
           sed -i '/<\/widget>/i \    <icon src="www/icon.png" \/>' config.xml
         fi
 
+        # Agregar plataforma y compilar
         cordova platform add android
         cordova build android --release
 
