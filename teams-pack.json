@@ -1,0 +1,567 @@
+{
+ "name": "TEBAS (plantilla: rellena realBadge con tus URLs https)",
+ "teams": [
+  {
+   "id": "real_chamartin",
+   "realName": "Real Madrid",
+   "realBadge": ""
+  },
+  {
+   "id": "blaugrana_fc",
+   "realName": "FC Barcelona",
+   "realBadge": ""
+  },
+  {
+   "id": "atletico_colchonero",
+   "realName": "Atlético de Madrid",
+   "realBadge": ""
+  },
+  {
+   "id": "leones_de_bilbao",
+   "realName": "Athletic Club",
+   "realBadge": ""
+  },
+  {
+   "id": "real_verdiblanco",
+   "realName": "Real Betis",
+   "realBadge": ""
+  },
+  {
+   "id": "sevilla_nervion",
+   "realName": "Sevilla FC",
+   "realBadge": ""
+  },
+  {
+   "id": "txuri_urdin",
+   "realName": "Real Sociedad",
+   "realBadge": ""
+  },
+  {
+   "id": "submarino_amarillo",
+   "realName": "Villarreal",
+   "realBadge": ""
+  },
+  {
+   "id": "murcielago_valenciano",
+   "realName": "Valencia CF",
+   "realBadge": ""
+  },
+  {
+   "id": "celeste_vigo",
+   "realName": "Celta de Vigo",
+   "realBadge": ""
+  },
+  {
+   "id": "azulon_getafe",
+   "realName": "Getafe CF",
+   "realBadge": ""
+  },
+  {
+   "id": "rojillos_pamplona",
+   "realName": "Osasuna",
+   "realBadge": ""
+  },
+  {
+   "id": "islenos_mallorca",
+   "realName": "Mallorca",
+   "realBadge": ""
+  },
+  {
+   "id": "franjirrojo_vallecas",
+   "realName": "Rayo Vallecano",
+   "realBadge": ""
+  },
+  {
+   "id": "indalico_almeria",
+   "realName": "UD Almería",
+   "realBadge": ""
+  },
+  {
+   "id": "racing_cantabro",
+   "realName": "Racing Santander",
+   "realBadge": ""
+  },
+  {
+   "id": "blanquiazul_coruna",
+   "realName": "Deportivo La Coruña",
+   "realBadge": ""
+  },
+  {
+   "id": "boqueron_malaga",
+   "realName": "Málaga",
+   "realBadge": ""
+  },
+  {
+   "id": "amarillo_canario",
+   "realName": "UD Las Palmas",
+   "realBadge": ""
+  },
+  {
+   "id": "orellut_castellon",
+   "realName": "Castellón",
+   "realBadge": ""
+  },
+  {
+   "id": "burgales_cf",
+   "realName": "Burgos CF",
+   "realBadge": ""
+  },
+  {
+   "id": "armeros_eibar",
+   "realName": "SD Eibar",
+   "realBadge": ""
+  },
+  {
+   "id": "rojiblanco_gijon",
+   "realName": "Sporting de Gijón",
+   "realBadge": ""
+  },
+  {
+   "id": "califal_cordoba",
+   "realName": "Córdoba",
+   "realBadge": ""
+  },
+  {
+   "id": "nazari_granada",
+   "realName": "Granada",
+   "realBadge": ""
+  },
+  {
+   "id": "tacita_cadiz",
+   "realName": "Cádiz",
+   "realBadge": ""
+  },
+  {
+   "id": "mano_zaragoza",
+   "realName": "Real Zaragoza",
+   "realBadge": ""
+  },
+  {
+   "id": "citizens_blue",
+   "realName": "Manchester City",
+   "realBadge": ""
+  },
+  {
+   "id": "merseyside_red",
+   "realName": "Liverpool",
+   "realBadge": ""
+  },
+  {
+   "id": "gunners_london",
+   "realName": "Arsenal",
+   "realBadge": ""
+  },
+  {
+   "id": "blues_west_london",
+   "realName": "Chelsea",
+   "realBadge": ""
+  },
+  {
+   "id": "manchester_red_devils",
+   "realName": "Manchester United",
+   "realBadge": ""
+  },
+  {
+   "id": "spurs_lilywhite",
+   "realName": "Tottenham",
+   "realBadge": ""
+  },
+  {
+   "id": "magpies_tyneside",
+   "realName": "Newcastle United",
+   "realBadge": ""
+  },
+  {
+   "id": "villans_birmingham",
+   "realName": "Aston Villa",
+   "realBadge": ""
+  },
+  {
+   "id": "hammers_east_london",
+   "realName": "West Ham",
+   "realBadge": ""
+  },
+  {
+   "id": "seagulls_sussex",
+   "realName": "Brighton",
+   "realBadge": ""
+  },
+  {
+   "id": "clarets_lancashire",
+   "realName": "Burnley",
+   "realBadge": ""
+  },
+  {
+   "id": "whites_yorkshire",
+   "realName": "Leeds United",
+   "realBadge": ""
+  },
+  {
+   "id": "canaries_norfolk",
+   "realName": "Norwich City",
+   "realBadge": ""
+  },
+  {
+   "id": "sky_blues_coventry",
+   "realName": "Coventry City",
+   "realBadge": ""
+  },
+  {
+   "id": "tractor_suffolk",
+   "realName": "Ipswich Town",
+   "realBadge": ""
+  },
+  {
+   "id": "lions_south_london",
+   "realName": "Millwall",
+   "realBadge": ""
+  },
+  {
+   "id": "saints_hampshire",
+   "realName": "Southampton",
+   "realBadge": ""
+  },
+  {
+   "id": "boro_teesside",
+   "realName": "Middlesbrough",
+   "realBadge": ""
+  },
+  {
+   "id": "tigers_humber",
+   "realName": "Hull City",
+   "realBadge": ""
+  },
+  {
+   "id": "red_dragons_wrexham",
+   "realName": "Wrexham",
+   "realBadge": ""
+  },
+  {
+   "id": "rams_derbyshire",
+   "realName": "Derby County",
+   "realBadge": ""
+  },
+  {
+   "id": "brummies_midlands",
+   "realName": "Birmingham City",
+   "realBadge": ""
+  },
+  {
+   "id": "swans_welsh",
+   "realName": "Swansea City",
+   "realBadge": ""
+  },
+  {
+   "id": "blades_sheffield",
+   "realName": "Sheffield United",
+   "realBadge": ""
+  },
+  {
+   "id": "hornets_hertfordshire",
+   "realName": "Watford",
+   "realBadge": ""
+  },
+  {
+   "id": "baggies_albion",
+   "realName": "West Bromwich Albion",
+   "realBadge": ""
+  },
+  {
+   "id": "foxes_leicestershire",
+   "realName": "Leicester City",
+   "realBadge": ""
+  },
+  {
+   "id": "nerazzurri_milano",
+   "realName": "Inter",
+   "realBadge": ""
+  },
+  {
+   "id": "rossoneri_milano",
+   "realName": "AC Milan",
+   "realBadge": ""
+  },
+  {
+   "id": "piemonte_black",
+   "realName": "Juventus",
+   "realBadge": ""
+  },
+  {
+   "id": "partenope_azzurra",
+   "realName": "Napoli",
+   "realBadge": ""
+  },
+  {
+   "id": "giallorossi_capitale",
+   "realName": "AS Roma",
+   "realBadge": ""
+  },
+  {
+   "id": "biancocelesti_roma",
+   "realName": "Lazio",
+   "realBadge": ""
+  },
+  {
+   "id": "dea_bergamasca",
+   "realName": "Atalanta",
+   "realBadge": ""
+  },
+  {
+   "id": "granata_torino",
+   "realName": "Torino",
+   "realBadge": ""
+  },
+  {
+   "id": "grifone_genova",
+   "realName": "Genoa",
+   "realBadge": ""
+  },
+  {
+   "id": "bavaria_munchen",
+   "realName": "Bayern München",
+   "realBadge": ""
+  },
+  {
+   "id": "borussia_schwarzgelb",
+   "realName": "Borussia Dortmund",
+   "realBadge": ""
+  },
+  {
+   "id": "werkself_leverkusen",
+   "realName": "Bayer Leverkusen",
+   "realBadge": ""
+  },
+  {
+   "id": "leipzig_taurus",
+   "realName": "RB Leipzig",
+   "realBadge": ""
+  },
+  {
+   "id": "eintracht_adler",
+   "realName": "Eintracht Frankfurt",
+   "realBadge": ""
+  },
+  {
+   "id": "werder_nord",
+   "realName": "Werder Bremen",
+   "realBadge": ""
+  },
+  {
+   "id": "konigsblau_ruhr",
+   "realName": "Schalke 04",
+   "realBadge": ""
+  },
+  {
+   "id": "paris_capitale",
+   "realName": "Paris Saint-Germain",
+   "realBadge": ""
+  },
+  {
+   "id": "marseille_phoceen",
+   "realName": "Olympique de Marsella",
+   "realBadge": ""
+  },
+  {
+   "id": "lyon_lumiere",
+   "realName": "Olympique de Lyon",
+   "realBadge": ""
+  },
+  {
+   "id": "monaco_rocher",
+   "realName": "AS Mónaco",
+   "realBadge": ""
+  },
+  {
+   "id": "lille_dogues",
+   "realName": "LOSC Lille",
+   "realBadge": ""
+  },
+  {
+   "id": "nantes_canari",
+   "realName": "FC Nantes",
+   "realBadge": ""
+  },
+  {
+   "id": "lens_sang_et_or",
+   "realName": "RC Lens",
+   "realBadge": ""
+  },
+  {
+   "id": "aguilas_de_lisboa",
+   "realName": "Benfica",
+   "realBadge": ""
+  },
+  {
+   "id": "dragones_del_norte",
+   "realName": "FC Porto",
+   "realBadge": ""
+  },
+  {
+   "id": "leones_verdes_lisboa",
+   "realName": "Sporting CP",
+   "realBadge": ""
+  },
+  {
+   "id": "guerreros_de_braga",
+   "realName": "SC Braga",
+   "realBadge": ""
+  },
+  {
+   "id": "amsterdam_atlas",
+   "realName": "Ajax",
+   "realBadge": ""
+  },
+  {
+   "id": "ciudad_luz_eindhoven",
+   "realName": "PSV",
+   "realBadge": ""
+  },
+  {
+   "id": "rotterdam_portuario",
+   "realName": "Feyenoord",
+   "realBadge": ""
+  },
+  {
+   "id": "alkmaar_quesero",
+   "realName": "AZ Alkmaar",
+   "realBadge": ""
+  },
+  {
+   "id": "banda_roja_nunez",
+   "realName": "River Plate",
+   "realBadge": ""
+  },
+  {
+   "id": "azul_y_oro_puerto",
+   "realName": "Boca Juniors",
+   "realBadge": ""
+  },
+  {
+   "id": "rubro_negro_carioca",
+   "realName": "Flamengo",
+   "realBadge": ""
+  },
+  {
+   "id": "verdao_paulista",
+   "realName": "Palmeiras",
+   "realBadge": ""
+  },
+  {
+   "id": "felinos_universitarios",
+   "realName": "Pumas UNAM",
+   "realBadge": ""
+  },
+  {
+   "id": "aguilas_capitalinas",
+   "realName": "Club América",
+   "realBadge": ""
+  },
+  {
+   "id": "carboneros_montevideo",
+   "realName": "Peñarol",
+   "realBadge": ""
+  },
+  {
+   "id": "tricolor_montevideo",
+   "realName": "Nacional",
+   "realBadge": ""
+  },
+  {
+   "id": "verdolagas_paisas",
+   "realName": "Atlético Nacional",
+   "realBadge": ""
+  },
+  {
+   "id": "azules_bogotanos",
+   "realName": "Millonarios",
+   "realBadge": ""
+  },
+  {
+   "id": "flamingos_miami",
+   "realName": "Inter Miami",
+   "realBadge": ""
+  },
+  {
+   "id": "estrellas_doradas_la",
+   "realName": "LA Galaxy",
+   "realBadge": ""
+  },
+  {
+   "id": "academia_dakar",
+   "realName": "Génération Foot",
+   "realBadge": ""
+  },
+  {
+   "id": "elefantes_de_aba",
+   "realName": "Enyimba",
+   "realBadge": ""
+  },
+  {
+   "id": "rojos_de_casablanca",
+   "realName": "Wydad Casablanca",
+   "realBadge": ""
+  },
+  {
+   "id": "guerreros_de_kumasi",
+   "realName": "Asante Kotoko",
+   "realBadge": ""
+  },
+  {
+   "id": "ciervos_de_kashima",
+   "realName": "Kashima Antlers",
+   "realBadge": ""
+  },
+  {
+   "id": "carmesi_de_kobe",
+   "realName": "Vissel Kobe",
+   "realBadge": ""
+  },
+  {
+   "id": "motores_de_jeonbuk",
+   "realName": "Jeonbuk Motors",
+   "realBadge": ""
+  },
+  {
+   "id": "luna_creciente_riad",
+   "realName": "Al-Hilal",
+   "realBadge": ""
+  },
+  {
+   "id": "victoria_amarilla_riad",
+   "realName": "Al-Nassr",
+   "realBadge": ""
+  },
+  {
+   "id": "tigres_de_yeda",
+   "realName": "Al-Ittihad",
+   "realBadge": ""
+  },
+  {
+   "id": "cielo_azul_sidney",
+   "realName": "Sydney FC",
+   "realBadge": ""
+  },
+  {
+   "id": "ciudad_celeste_melbourne",
+   "realName": "Melbourne City",
+   "realBadge": ""
+  }
+ ],
+ "aliases": {
+  "Liga Ibérica": "LaLiga EA Sports",
+  "Liga Ibérica de Ascenso": "LaLiga Hypermotion",
+  "Copa del Monarca": "Copa del Rey",
+  "Liga Albión": "Premier League",
+  "Liga Albión Segunda": "EFL Championship",
+  "Copa Albión": "FA Cup",
+  "Liga Peninsular": "Serie A",
+  "Copa Peninsular": "Coppa Italia",
+  "Liga Federal": "Bundesliga",
+  "Copa Federal": "DFB-Pokal",
+  "Liga Gala": "Ligue 1",
+  "Copa Gala": "Copa de Francia",
+  "Copa de Campeones de Europa": "UEFA Champions League",
+  "Copa Continental Europea": "UEFA Europa League",
+  "Copa de Campeones Sudamericana": "Copa Libertadores"
+ }
+}
