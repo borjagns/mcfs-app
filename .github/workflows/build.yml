@@ -48,8 +48,10 @@ jobs:
           npx cap copy android
           npx cap sync android
 
-      - name: Corregir duplicados de Kotlin en Gradle
+      - name: Actualizar minSdkVersion a 24 y corregir duplicados de Kotlin
         run: |
+          find android -name "*.gradle" -exec sed -i 's/minSdkVersion = 23/minSdkVersion = 24/g' {} +
+          find android -name "*.gradle" -exec sed -i 's/minSdkVersion 23/minSdkVersion 24/g' {} +
           cat << 'EOF' >> android/app/build.gradle
           
           android {
@@ -77,5 +79,7 @@ jobs:
         with:
           name: mi-carrera-futbolistica
           path: |
+            android/app/build/outputs/apk/debug/app-debug.apk
+            android/app/build/outputs/bundle/debug/app-debug.aab
             android/app/build/outputs/apk/debug/app-debug.apk
             android/app/build/outputs/bundle/debug/app-debug.aab
