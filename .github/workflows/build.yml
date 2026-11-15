@@ -1,9 +1,9 @@
-name: Build Android APK and AAB from HTML
+name: Build Signed Android AAB and Debug APK
 
 on:
   push:
     branches:
-      - main  # Cambia a 'master' si tu rama principal se llama así
+      - main
   workflow_dispatch:
 
 jobs:
@@ -48,13 +48,31 @@ jobs:
           npx cap copy android
           npx cap sync android
 
-      - name: Actualizar minSdkVersion a 24 y corregir duplicados de Kotlin
+      - name: Decodificar Keystore desde Secrets
+        run: |
+          echo "${{ secrets.KEYSTORE_BASE64 }}" | base64 -d > android/app/release.keystore
+
+      - name: Configurar firma Release, minSdk 24 y Kotlin
         run: |
           find android -name "*.gradle" -exec sed -i 's/minSdkVersion = 23/minSdkVersion = 24/g' {} +
           find android -name "*.gradle" -exec sed -i 's/minSdkVersion 23/minSdkVersion 24/g' {} +
           cat << 'EOF' >> android/app/build.gradle
           
           android {
+              signingConfigs {
+                  release {
+                      storeFile file("release.keystore")
+                      storePassword System.getenv("KEYSTORE_PASSWORD")
+                      keyAlias System.getenv("KEY_ALIAS")
+                      keyPassword System.getenv("KEY_PASSWORD")
+                  }
+              }
+              buildTypes {
+                  release {
+                      signingConfig signingConfigs.release
+                      minifyEnabled false
+                  }
+              }
               configurations.all {
                   resolutionStrategy {
                       force 'org.jetbrains.kotlin:kotlin-stdlib:1.8.22'
@@ -68,11 +86,15 @@ jobs:
       - name: Dar permisos a Gradle
         run: chmod +x android/gradlew
 
-      - name: Compilar APK y AAB
+      - name: Compilar APK Debug y AAB Release Firmado
+        env:
+          KEYSTORE_PASSWORD: ${{ secrets.KEYSTORE_PASSWORD }}
+          KEY_ALIAS: ${{ secrets.KEY_ALIAS }}
+          KEY_PASSWORD: ${{ secrets.KEY_PASSWORD }}
         run: |
           cd android
           ./gradlew assembleDebug
-          ./gradlew bundleDebug
+          ./gradlew bundleRelease
 
       - name: Subir APK y AAB generados
         uses: actions/upload-artifact@v4
@@ -80,6 +102,4 @@ jobs:
           name: mi-carrera-futbolistica
           path: |
             android/app/build/outputs/apk/debug/app-debug.apk
-            android/app/build/outputs/bundle/debug/app-debug.aab
-            android/app/build/outputs/apk/debug/app-debug.apk
-            android/app/build/outputs/bundle/debug/app-debug.aab
+            android/app/build/outputs/bundle/release/app-release.aab
