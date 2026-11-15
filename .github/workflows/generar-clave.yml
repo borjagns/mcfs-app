@@ -1,0 +1,21 @@
+name: Generar Keystore
+
+on:
+  workflow_dispatch:
+
+jobs:
+  keygen:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Crear Keystore y Base64
+        run: |
+          keytool -genkey -v -keystore release.keystore -alias mcfs_key -keyalg RSA -keysize 2048 -validity 10000 -storepass "22881100" -keypass "22881100" -dname "CN=Borja, OU=Dev, O=MCFS, L=Valencia, ST=Valencia, C=ES"
+          base64 -w 0 release.keystore > keystore_base64.txt
+
+      - name: Subir archivos de clave
+        uses: actions/upload-artifact@v4
+        with:
+          name: mi-clave-firma
+          path: |
+            release.keystore
+            keystore_base64.txt
