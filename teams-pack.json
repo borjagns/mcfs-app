@@ -1,80 +1,80 @@
 {
- "name": "TEBAS (plantilla: rellena realBadge con tus URLs https)",
+ "name": "TEBAS",
  "teams": [
   {
    "id": "real_chamartin",
    "realName": "Real Madrid",
-   "realBadge": ""
+   "realBadge": "https://crests.football-data.org/86.png"
   },
   {
    "id": "blaugrana_fc",
    "realName": "FC Barcelona",
-   "realBadge": ""
+   "realBadge": "https://crests.football-data.org/81.png"
   },
   {
    "id": "atletico_colchonero",
    "realName": "Atlético de Madrid",
-   "realBadge": ""
+   "realBadge": "https://crests.football-data.org/78.png"
   },
   {
    "id": "leones_de_bilbao",
    "realName": "Athletic Club",
-   "realBadge": ""
+   "realBadge": "https://crests.football-data.org/77.png"
   },
   {
    "id": "real_verdiblanco",
    "realName": "Real Betis",
-   "realBadge": ""
+   "realBadge": "https://crests.football-data.org/90.png"
   },
   {
    "id": "sevilla_nervion",
    "realName": "Sevilla FC",
-   "realBadge": ""
+   "realBadge": "https://crests.football-data.org/559.png"
   },
   {
    "id": "txuri_urdin",
    "realName": "Real Sociedad",
-   "realBadge": ""
+   "realBadge": "https://crests.football-data.org/92.png"
   },
   {
    "id": "submarino_amarillo",
    "realName": "Villarreal",
-   "realBadge": ""
+   "realBadge": "https://crests.football-data.org/94.png"
   },
   {
    "id": "murcielago_valenciano",
    "realName": "Valencia CF",
-   "realBadge": ""
+   "realBadge": "https://crests.football-data.org/95.png"
   },
   {
    "id": "celeste_vigo",
    "realName": "Celta de Vigo",
-   "realBadge": ""
+   "realBadge": "https://crests.football-data.org/558.png"
   },
   {
    "id": "azulon_getafe",
    "realName": "Getafe CF",
-   "realBadge": ""
+   "realBadge": "https://crests.football-data.org/82.png"
   },
   {
    "id": "rojillos_pamplona",
    "realName": "Osasuna",
-   "realBadge": ""
+   "realBadge": "https://crests.football-data.org/79.png"
   },
   {
    "id": "islenos_mallorca",
    "realName": "Mallorca",
-   "realBadge": ""
+   "realBadge": "https://crests.football-data.org/89.png"
   },
   {
    "id": "franjirrojo_vallecas",
    "realName": "Rayo Vallecano",
-   "realBadge": ""
+   "realBadge": "https://crests.football-data.org/87.png"
   },
   {
    "id": "indalico_almeria",
    "realName": "UD Almería",
-   "realBadge": ""
+   "realBadge": "https://crests.football-data.org/267.png"
   },
   {
    "id": "racing_cantabro",
@@ -139,97 +139,97 @@
   {
    "id": "citizens_blue",
    "realName": "Manchester City",
-   "realBadge": ""
+   "realBadge": "https://crests.football-data.org/65.png"
   },
   {
    "id": "merseyside_red",
    "realName": "Liverpool",
-   "realBadge": ""
+   "realBadge": "https://crests.football-data.org/64.png"
   },
   {
    "id": "gunners_london",
    "realName": "Arsenal",
-   "realBadge": ""
+   "realBadge": "https://crests.football-data.org/57.png"
   },
   {
    "id": "blues_west_london",
    "realName": "Chelsea",
-   "realBadge": ""
+   "realBadge": "https://crests.football-data.org/61.png"
   },
   {
    "id": "manchester_red_devils",
    "realName": "Manchester United",
-   "realBadge": ""
+   "realBadge": "https://crests.football-data.org/66.png"
   },
   {
    "id": "spurs_lilywhite",
    "realName": "Tottenham",
-   "realBadge": ""
+   "realBadge": "https://crests.football-data.org/73.png"
   },
   {
    "id": "magpies_tyneside",
    "realName": "Newcastle United",
-   "realBadge": ""
+   "realBadge": "https://crests.football-data.org/67.png"
   },
   {
    "id": "villans_birmingham",
    "realName": "Aston Villa",
-   "realBadge": ""
+   "realBadge": "https://crests.football-data.org/58.png"
   },
   {
    "id": "hammers_east_london",
    "realName": "West Ham",
-   "realBadge": ""
+   "realBadge": "https://crests.football-data.org/563.png"
   },
   {
    "id": "seagulls_sussex",
    "realName": "Brighton",
-   "realBadge": ""
+   "realBadge": "https://crests.football-data.org/397.png"
   },
   {
    "id": "clarets_lancashire",
    "realName": "Burnley",
-   "realBadge": ""
+   "realBadge": "https://crests.football-data.org/328.png"
   },
   {
    "id": "whites_yorkshire",
    "realName": "Leeds United",
-   "realBadge": ""
+   "realBadge": "https://crests.football-data.org/341.png"
   },
   {
    "id": "canaries_norfolk",
    "realName": "Norwich City",
-   "realBadge": ""
+   "realBadge": "https://crests.football-data.org/68.png"
   },
   {
    "id": "sky_blues_coventry",
    "realName": "Coventry City",
-   "realBadge": ""
+   "realBadge": "https://crests.football-data.org/1076.png"
   },
   {
    "id": "tractor_suffolk",
    "realName": "Ipswich Town",
-   "realBadge": ""
+   "realBadge": "https://crests.football-data.org/349.png"
   },
   {
    "id": "lions_south_london",
    "realName": "Millwall",
-   "realBadge": ""
+   "realBadge": "https://crests.football-data.org/384.png"
   },
   {
    "id": "saints_hampshire",
    "realName": "Southampton",
-   "realBadge": ""
+   "realBadge": "https://crests.football-data.org/340.png"
   },
   {
    "id": "boro_teesside",
    "realName": "Middlesbrough",
-   "realBadge": ""
+   "realBadge": "https://crests.football-data.org/343.png"
   },
   {
    "id": "tigers_humber",
    "realName": "Hull City",
-   "realBadge": ""
+   "realBadge": "https://crests.football-data.org/322.png"
   },
   {
    "id": "red_dragons_wrexham",
@@ -239,192 +239,192 @@
   {
    "id": "rams_derbyshire",
    "realName": "Derby County",
-   "realBadge": ""
+   "realBadge": "https://crests.football-data.org/342.png"
   },
   {
    "id": "brummies_midlands",
    "realName": "Birmingham City",
-   "realBadge": ""
+   "realBadge": "https://crests.football-data.org/332.png"
   },
   {
    "id": "swans_welsh",
    "realName": "Swansea City",
-   "realBadge": ""
+   "realBadge": "https://crests.football-data.org/72.png"
   },
   {
    "id": "blades_sheffield",
    "realName": "Sheffield United",
-   "realBadge": ""
+   "realBadge": "https://crests.football-data.org/356.png"
   },
   {
    "id": "hornets_hertfordshire",
    "realName": "Watford",
-   "realBadge": ""
+   "realBadge": "https://crests.football-data.org/346.png"
   },
   {
    "id": "baggies_albion",
    "realName": "West Bromwich Albion",
-   "realBadge": ""
+   "realBadge": "https://crests.football-data.org/74.png"
   },
   {
    "id": "foxes_leicestershire",
    "realName": "Leicester City",
-   "realBadge": ""
+   "realBadge": "https://crests.football-data.org/338.png"
   },
   {
    "id": "nerazzurri_milano",
    "realName": "Inter",
-   "realBadge": ""
+   "realBadge": "https://crests.football-data.org/108.png"
   },
   {
    "id": "rossoneri_milano",
    "realName": "AC Milan",
-   "realBadge": ""
+   "realBadge": "https://crests.football-data.org/98.png"
   },
   {
    "id": "piemonte_black",
    "realName": "Juventus",
-   "realBadge": ""
+   "realBadge": "https://crests.football-data.org/109.png"
   },
   {
    "id": "partenope_azzurra",
    "realName": "Napoli",
-   "realBadge": ""
+   "realBadge": "https://crests.football-data.org/113.png"
   },
   {
    "id": "giallorossi_capitale",
    "realName": "AS Roma",
-   "realBadge": ""
+   "realBadge": "https://crests.football-data.org/100.png"
   },
   {
    "id": "biancocelesti_roma",
    "realName": "Lazio",
-   "realBadge": ""
+   "realBadge": "https://crests.football-data.org/110.png"
   },
   {
    "id": "dea_bergamasca",
    "realName": "Atalanta",
-   "realBadge": ""
+   "realBadge": "https://crests.football-data.org/102.png"
   },
   {
    "id": "granata_torino",
    "realName": "Torino",
-   "realBadge": ""
+   "realBadge": "https://crests.football-data.org/586.png"
   },
   {
    "id": "grifone_genova",
    "realName": "Genoa",
-   "realBadge": ""
+   "realBadge": "https://crests.football-data.org/107.png"
   },
   {
    "id": "bavaria_munchen",
    "realName": "Bayern München",
-   "realBadge": ""
+   "realBadge": "https://crests.football-data.org/5.png"
   },
   {
    "id": "borussia_schwarzgelb",
    "realName": "Borussia Dortmund",
-   "realBadge": ""
+   "realBadge": "https://crests.football-data.org/4.png"
   },
   {
    "id": "werkself_leverkusen",
    "realName": "Bayer Leverkusen",
-   "realBadge": ""
+   "realBadge": "https://crests.football-data.org/3.png"
   },
   {
    "id": "leipzig_taurus",
    "realName": "RB Leipzig",
-   "realBadge": ""
+   "realBadge": "https://crests.football-data.org/721.png"
   },
   {
    "id": "eintracht_adler",
    "realName": "Eintracht Frankfurt",
-   "realBadge": ""
+   "realBadge": "https://crests.football-data.org/19.png"
   },
   {
    "id": "werder_nord",
    "realName": "Werder Bremen",
-   "realBadge": ""
+   "realBadge": "https://crests.football-data.org/12.png"
   },
   {
    "id": "konigsblau_ruhr",
    "realName": "Schalke 04",
-   "realBadge": ""
+   "realBadge": "https://crests.football-data.org/6.png"
   },
   {
    "id": "paris_capitale",
    "realName": "Paris Saint-Germain",
-   "realBadge": ""
+   "realBadge": "https://crests.football-data.org/524.png"
   },
   {
    "id": "marseille_phoceen",
    "realName": "Olympique de Marsella",
-   "realBadge": ""
+   "realBadge": "https://crests.football-data.org/516.png"
   },
   {
    "id": "lyon_lumiere",
    "realName": "Olympique de Lyon",
-   "realBadge": ""
+   "realBadge": "https://crests.football-data.org/523.png"
   },
   {
    "id": "monaco_rocher",
    "realName": "AS Mónaco",
-   "realBadge": ""
+   "realBadge": "https://crests.football-data.org/548.png"
   },
   {
    "id": "lille_dogues",
    "realName": "LOSC Lille",
-   "realBadge": ""
+   "realBadge": "https://crests.football-data.org/521.png"
   },
   {
    "id": "nantes_canari",
    "realName": "FC Nantes",
-   "realBadge": ""
+   "realBadge": "https://crests.football-data.org/543.png"
   },
   {
    "id": "lens_sang_et_or",
    "realName": "RC Lens",
-   "realBadge": ""
+   "realBadge": "https://crests.football-data.org/546.png"
   },
   {
    "id": "aguilas_de_lisboa",
    "realName": "Benfica",
-   "realBadge": ""
+   "realBadge": "https://crests.football-data.org/1903.png"
   },
   {
    "id": "dragones_del_norte",
    "realName": "FC Porto",
-   "realBadge": ""
+   "realBadge": "https://crests.football-data.org/503.png"
   },
   {
    "id": "leones_verdes_lisboa",
    "realName": "Sporting CP",
-   "realBadge": ""
+   "realBadge": "https://crests.football-data.org/498.png"
   },
   {
    "id": "guerreros_de_braga",
    "realName": "SC Braga",
-   "realBadge": ""
+   "realBadge": "https://crests.football-data.org/5613.png"
   },
   {
    "id": "amsterdam_atlas",
    "realName": "Ajax",
-   "realBadge": ""
+   "realBadge": "https://crests.football-data.org/678.png"
   },
   {
    "id": "ciudad_luz_eindhoven",
    "realName": "PSV",
-   "realBadge": ""
+   "realBadge": "https://crests.football-data.org/674.png"
   },
   {
    "id": "rotterdam_portuario",
    "realName": "Feyenoord",
-   "realBadge": ""
+   "realBadge": "https://crests.football-data.org/675.png"
   },
   {
    "id": "alkmaar_quesero",
    "realName": "AZ Alkmaar",
-   "realBadge": ""
+   "realBadge": "https://crests.football-data.org/682.png"
   },
   {
    "id": "banda_roja_nunez",
