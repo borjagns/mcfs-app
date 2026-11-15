@@ -52,10 +52,16 @@ jobs:
         run: |
           echo "${{ secrets.KEYSTORE_BASE64 }}" | base64 -d > android/app/release.keystore
 
-      - name: Configurar firma Release, minSdk 24 y Kotlin
+      - name: Configurar firma Release, SDK 24/36, versionCode y Kotlin
         run: |
           find android -name "*.gradle" -exec sed -i 's/minSdkVersion = 23/minSdkVersion = 24/g' {} +
           find android -name "*.gradle" -exec sed -i 's/minSdkVersion 23/minSdkVersion 24/g' {} +
+          find android -name "*.gradle" -exec sed -i 's/targetSdkVersion = 35/targetSdkVersion = 36/g' {} +
+          find android -name "*.gradle" -exec sed -i 's/targetSdkVersion 35/targetSdkVersion 36/g' {} +
+          find android -name "*.gradle" -exec sed -i 's/compileSdkVersion = 35/compileSdkVersion = 36/g' {} +
+          find android -name "*.gradle" -exec sed -i 's/compileSdkVersion 35/compileSdkVersion 36/g' {} +
+          find android -name "*.gradle" -exec sed -i 's/compileSdk = 35/compileSdk = 36/g' {} +
+          find android -name "*.gradle" -exec sed -i 's/versionCode 1/versionCode 2/g' {} +
           cat << 'EOF' >> android/app/build.gradle
           
           android {
